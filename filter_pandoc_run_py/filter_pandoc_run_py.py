@@ -178,7 +178,7 @@ def handle_inline_plot(code, classes, keyvals, format, ident):
 			figattr_id, figattr_kws = '', [] 
 
 		kw_ext = 'ext{}'.format(num) if num > 1 else 'ext'
-		ext = get_key_in_keyval_list(kw, kw_ext, 'png')
+		ext = get_key_in_keyval_list(kw, kw_ext, 'pdf')
 		
 		filePath = '{}.{}'.format(fname, ext)
 		plt.savefig(filePath, format=ext)
